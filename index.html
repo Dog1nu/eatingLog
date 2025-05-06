@@ -1,0 +1,38 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1 id="appTitle">食事管理</h1>
+      <!-- 後で追加する要素のためのコンテナ -->
+    </div>
+    <!-- index.html -->
+
+    <!-- ... -->
+    <form id="applicationForm">
+      <!-- 企業名に加え、面接日程や面接後の振り返りも記録できるようにします -->
+      <input
+        type="text"
+        id="companyInput"
+        placeholder="食べたもの（例：白米）"
+        required
+      />
+      <input type="date" id="dateInput" required />
+      <select id="statusSelect">
+        <option value="炭水化物">炭水化物</option>
+        <option value="タンパク質">タンパク質</option>
+        <option value="脂質">脂質</option>
+        <option value="ビタミン">ビタミン</option>
+      </select>
+      <textarea id="noteInput" placeholder="備考（任意）"></textarea>
+      <button type="submit">たべものを追加</button>
+    </form>
+    <ul id="applicationList"></ul>
+  </body>
+</html>
